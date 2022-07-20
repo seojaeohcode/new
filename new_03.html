@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        div{
+            border: solid 1px red;
+            margin-bottom: 20px;
+        }
+        div:nth-of-type(1){
+            width: 100px;
+            height: 100px;
+        }
+        div:nth-of-type(2){
+            /* body 부모요소의 크기에 비례하여 너비크기를 정하지만 높이값은 제대로 동작하지 않는다. */
+            width: 20%;
+            height: 20%;
+        }
+        div:nth-of-type(3){
+            /* vw 가로기준 */
+            width: 20vw;
+            height: 20vw;
+        }
+        div:nth-of-type(4){
+            /* vh 세로기준 */
+            width: 20vh;
+            height: 20vh;
+        }
+    </style>
+    <title>영역별 크기 정하기</title>
+</head>
+<body>
+    <div>100px</div>
+    <div>100%</div>
+    <div>100vw</div>
+    <div>100vh</div>
+</body>
+</html>
