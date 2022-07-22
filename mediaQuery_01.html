@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-size: 0;
+        }
+
+        #wrap {
+            width: 90%;
+            margin: 0 auto;
+            border: solid 4px #000;
+        }
+
+        #wrap div {
+            display: inline-block;
+            height: 150px;
+        }
+
+        #wrap div:first-child {
+            background: #333;
+        }
+
+        #wrap div:nth-child(2) {
+            background: #666;
+        }
+
+        #wrap div:nth-child(3) {
+            background: #999;
+        }
+
+        #wrap div:nth-child(4) {
+            background: #ccc;
+        }
+
+        #wrap div:nth-child(5) {
+            background: #eee;
+        }
+
+        @media all and (min-width:320px) {
+            #wrap div {
+                width: 100%;
+            }
+        }
+
+        @media all and (min-width:768px) {
+            #wrap div {
+                width: 50%;
+            }
+
+            #wrap div:last-child {
+                width: 100%;
+            }
+        }
+        @media all and (min-width:1024px) {
+            #wrap div {
+                width: 20%;
+            }
+            #wrap div:last-child {
+                width: 20%;
+            }
+        }
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="wrap">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</body>
+
+</html>
