@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        #wrap{
+            display: grid;
+            /* 화면을 꽉 채울만큼 칼럼 너비를 늘려서 표시 */
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            margin-bottom: 50px;
+        }
+        #wrap2{
+            display: grid;
+            /* 칼럼 최소 너비만큼 채워서 표시 현재는 최소 100px */
+            grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+        }
+        .item{
+            padding: 15px;
+            background: #eee;
+        }
+        .item:nth-child(odd){
+            background: #ddd;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <h1>auto-fit</h1>
+    <div id="wrap">
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla lorem odio,</div>
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla lorem odio,</div>
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla lorem odio,</div>
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla lorem odio,</div>
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla lorem odio,</div>
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla lorem odio,</div>
+    </div>
+    <h1>auto-fill</h1>
+    <div id="wrap2">
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla lorem odio,</div>
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla lorem odio,</div>
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla lorem odio,</div>
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla lorem odio,</div>
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla lorem odio,</div>
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla lorem odio,</div>
+    </div>
+</body>
+</html>

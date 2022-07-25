@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        #wrap {
+            width: 700px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 100px);
+        }
+
+        .box {
+            padding: 15px;
+            color: #fff;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .box1 {
+            background: red;
+            grid-column: 1/4;
+        }
+
+        .box2 {
+            background: black;
+            grid-row: 2/4;
+            grid-column-start: 1;
+        }
+
+        .box3 {
+            background: blue;
+            grid-column: 2/4;
+            grid-column-start: 2;
+        }
+
+        .box4 {
+            background: green;
+            grid-column-start: 3;
+            grid-row-start: 3;
+        }
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="wrap">
+        <div class="box box1">box1</div>
+        <div class="box box2">box2</div>
+        <div class="box box3">box3</div>
+        <div class="box box4">box4</div>
+    </div>
+</body>
+
+</html>
