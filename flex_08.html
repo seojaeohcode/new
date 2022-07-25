@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        #wrap{
+            width: 100%;
+            background: #333;
+            display: flex;
+        }
+        article{
+            width: 1200px;
+            background: #999;
+            font-size: 50px;
+            display: flex;
+            border: solid red 1px;
+            /* box-sizing: border-box; */
+        }
+        article:nth-of-type(1){
+            flex-shrink: 1; /*flex 컨테이너의 남는 공간이 부족할 때만 사용가능*/
+            /* 감소 비율 지정(숫자가 크면 작아진다.) */
+        }
+        article:nth-of-type(2){
+            flex-shrink: 2; 
+        }
+        article:nth-of-type(3){
+            flex-shrink: 3; 
+        }
+        
+        /* 전체 너비값의 비율을 조절할 때 사용 
+        article:nth-of-type(1){
+            flex: 1;
+        }
+        article:nth-of-type(2){
+            flex: 2;
+        }
+        article:nth-of-type(3){
+            flex: 3;
+        } */
+    </style>
+    <title>요소의 안쪽 여백 확대하기</title>
+</head>
+<body>
+    <div id="wrap">
+        <article>FLEX GROW 1</article>
+        <article>FLEX GROW 2</article>
+        <article>FLEX GROW 3</article>
+    </div>
+</body>
+</html>

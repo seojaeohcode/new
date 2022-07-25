@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        #wrap{
+            width: 100%;
+            background: #333;
+            display: flex;
+        }
+        article{
+            width: 100px;
+            height: 100px;
+            background: #999;
+            font-size: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: solid red 1px;
+        }
+        article:nth-of-type(1){
+            order: 2; /*요소의 순서를 지정할 때(주의사항-자식요소에 전체 줘야함.)*/
+        }
+        article:nth-of-type(2){
+            order: 5;
+        }
+        article:nth-of-type(3){
+            order: 4;
+        }
+        article:nth-of-type(4){
+            order: 1;
+        }
+        article:nth-of-type(5){
+            order: 3;
+        }
+    </style>
+    <title>자식요소 순서 지정하기</title>
+</head>
+<body>
+    <div id="wrap">
+        <article>1</article>
+        <article>2</article>
+        <article>3</article>
+        <article>4</article>
+        <article>5</article>
+    </div>
+</body>
+</html>
